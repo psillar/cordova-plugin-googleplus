@@ -29,10 +29,12 @@
   <!-- android -->
   <platform name="android">
 
+    <!-- all of these ways of referencing conflict with com.phonegap.plugins.facebookconnect, so not using them -->
     <!-- these give a lot of peeps trouble, esp on build.phonegap.com, so not using them -->
     <!--<framework src="com.google.android.gms:play-services-plus:+" />-->
     <!--<framework src="com.google.android.gms:play-services-identity:+" />-->
-    <dependency id="cordova-plugin-googleplayservices" />
+    <!--<dependency id="cordova-plugin-googleplayservices" />-->
+    <framework src="play-services-exclude-v4.gradle" custom="true" type="gradleReference" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="GooglePlus">
