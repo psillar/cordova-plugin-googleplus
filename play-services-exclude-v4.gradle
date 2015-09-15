@@ -1,0 +1,8 @@
+dependencies {
+   compile ('com.google.android.gms:play-services-plus:+') {       
+       exclude module: 'support-v4'
+   }
+   compile ('com.google.android.gms:play-services-identity:+') {       
+       exclude module: 'support-v4'
+   }
+}
